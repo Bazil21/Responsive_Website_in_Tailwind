@@ -1,0 +1,204 @@
+
+@import url('./assets/css/font.css');
+@import url('./assets/fonts/Axiforma-Black.woff2');
+@import url('./assets/fonts/Axiforma-Bold.woff');
+@import url('./assets/fonts/Axiforma-Regular.woff2');
+@import url('./assets/fonts/Axiforma-Regular.woff');
+@import url('./assets/fonts/Axiforma-Medium.woff2');
+@import url('./assets/fonts/Axiforma-Medium.woff');
+@import url('./assets/fonts/Axiforma-Heavy.woff');
+@import url('./assets/fonts/Axiforma-Heavy.woff2');
+
+body {
+  font-family: 'Axiforma';
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+#header{
+  font-weight: lighter;
+  font-size: 18px;
+}
+    #menu-toggle:checked + #menu {
+        display: block;
+    }
+    #sortbox:checked ~ #sortboxmenu {
+        opacity: 1;
+    }
+    #learnbox:checked ~ #learnboxmenu {
+        opacity: 1;
+        background-color: yellowgreen;
+    }
+    .hover\:grow {
+        transition: all 0.3s;
+        transform: scale(1);
+    }
+    
+    .hover\:grow:hover {
+        transform: scale(1.02);
+    }
+    
+.buybtn{
+    width: 125px;
+    height: 50px;
+    text-align: center;
+    background: #47763B;
+    border-radius: 1px;
+  } 
+
+
+  @media only screen and (max-width: 786px) {
+    #wrapper{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        order: 2;
+    }
+   #img_head{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+   }
+    #section{
+        flex-wrap: wrap;
+        display: inline-flex;
+        flex: 1;
+        }
+        #btn-group{
+            margin: 10px;
+            position: static !important;
+            width: 100%  !important;
+            padding: 8px;
+            text-align: center;
+            background: #7A6E66;
+            background: #47763B;
+         }
+         #btn-group2{
+            margin: 10px;
+            padding: 8px;
+            text-align: center;
+            position: static !important;
+            width: 100%  !important;
+            background: #7A6E66;
+         }
+  }
+  .share{
+    width: 135px;
+    height: 45px;
+    background: #EEF3E6;
+    border-radius: 500px;
+  }
+ #btn-group{
+    position: absolute;
+    width: 206px;
+    height: 50px;
+    left: 150px;
+    top: 700px;
+    background: #47763B;
+    text-align: center;
+    color: #ffffff;
+ }
+ #btn-group2{
+    position: absolute;
+    width: 206px;
+    height: 50px;
+    left:365px;
+    top: 700px;
+    background: #7A6E66;
+    color: #ffffff;
+ }
+/* -- quantity box -- */
+
+.quantity {
+    display: inline-block; 
+}
+   
+   .quantity .input-text.qty {
+    width: 45px;
+    height: 39px;
+    padding:  10px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+   }
+   
+   .quantity.buttons_added {
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top; }
+   
+   .quantity.buttons_added input {
+    display: inline-block;
+  
+   }
+   .quantity,.input-text {
+    Width :140px;
+    border: 1px solid #EBECED;
+    Height :50px;
+    color: #737989;
+    padding: 7px 10px 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    background-color: #ffffff;
+    text-align: center;
+   }
+   .input-text{
+       color: black;
+   }
+   .quantity.buttons_added .minus,
+   .quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    cursor:pointer;}
+   
+   .quantity.buttons_added .minus {
+    border-right: 0; }
+   
+   .quantity.buttons_added .plus {
+    border-left: 0; }
+   
+   .quantity.buttons_added .minus:hover,
+   .quantity.buttons_added .plus:hover {
+    background: #eeeeee; }
+   
+   .quantity input::-webkit-outer-spin-button,
+   .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; }
+    
+    .quantity.buttons_added .minus:focus,
+   .quantity.buttons_added .plus:focus {
+    outline: none; }
+   
+  #dinput{
+    width: 280px;
+    height: 46px;
+    padding: 5px;
+    color: black;
+    /* Default Color */
+    background: #FFFFFF;
+    border: 1px solid #E4E5E7;
+    box-sizing: border-box;
+  } 
+  ::-webkit-input-placeholder { /* Edge */
+    color: black;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+  }
+  ::placeholder{
+      color: black !important;
+      padding: 5px;
+  }
